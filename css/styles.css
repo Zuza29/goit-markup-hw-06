@@ -477,10 +477,19 @@ display: flex;
   padding-bottom: 60px;
 }
 
-.container-footer-social {
+.container-footer-social,
+.container-footer-form {
   display: flex;
   flex-wrap: wrap;
+}
+
+.container-footer-social {
   max-width: 206px;
+}
+
+.container-footer-form {
+  max-width: 400px;
+  margin-left: 140px;
 }
 
 .footer h3 {
@@ -490,15 +499,23 @@ display: flex;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
-  margin-left: 70px;
   display: block;
   padding-top: 72px;
   margin-bottom: 20px;
+  margin-left: 70px;
+}
+
+.footer-social,
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+
+.container-footer-form h3 {
+  margin-left: 0;
 }
 
 .footer-social {
-  display: flex;
-  align-items: center;
   margin-left: 55px;
 }
 
@@ -687,4 +704,84 @@ padding-top: 49px;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-form > p {
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--text-black);
+margin-top: 40px;
+margin-bottom: 30px;
+}
+
+.modal-form label p {
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: var(--text-grey);
+padding-left: 40px;
+margin-bottom: 4px;
+margin-top: 10px;
+}
+
+.modal-form label {
+    display: flex;
+  flex-direction: column;
+}
+
+.modal-form textarea::placeholder {
+color: rgba(117, 117, 117, 0.5);
+font-size: 12px;
+line-height: 1.16;
+padding: 12px 16px;
+}
+
+.modal-form input {
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+width: 448px;
+height: 40px;
+}
+
+.modal-form textarea {
+  height: 120px;
+  width: 448px;
+}
+
+.modal-form .checkbox input {
+  width: 16px;
+  height: 15px;
+  margin-left: 0;
+  margin-right: 7px;
+}
+
+.checkbox label {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbox label > p {
+  margin: 0;
+  padding: 0;
+}
+
+.modal-form input,
+.modal-form textarea {
+margin-left: auto;
+margin-right: auto;
+}
+
+.modal-form textarea {
+  resize: none;
+}
+
+.modal-form input:hover,
+.modal-form textarea:hover,
+.modal-form input:focus,
+.modal-form textarea:focus {
+border: 1px solid var(--blue);
+border-radius: 4px;
 }

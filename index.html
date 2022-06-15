@@ -437,13 +437,19 @@
           <label>
                 <p> Komentarz </p>
             <textarea placeholder="Wprowadź tekst" resize="none"></textarea>
-          </label> 
-          <div class="checkbox">
-          
-          <label><p>
-              Oświadczam, iż akceptuję Regulamin i Politykę Prywatności.</p>
-              <input type="checkbox" required selected>
-          </label>
+            <div class="checkbox-container">
+              <input
+                            class="checkbox"
+                            type="checkbox"
+                            name="consent"
+                            value="consent"
+                            required />
+
+                        <label for="consent">
+                            Oświadczam iż akceptuję
+                            <a href="#rules">Regulamin</a> i
+                            <a href="#privacypolicy">Politykę Prywatności</a>.
+                        </label>
           </div>
         </form>
       </div>

@@ -751,20 +751,19 @@ img {
 
 .modal-form input,
 .modal-form textarea {
-  margin-right: auto;
-  margin-left: auto;
   color: var(--text-grey);
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
+  display: block;
 }
 
 .checkbox-container {
   display: flex;
   justify-content: center;
-  padding-right: 20px;
-  margin-top: 20px;
+  padding-right: 40px;
+  margin-top: 0;
 }
 
 .checkbox-container a {
@@ -819,6 +818,31 @@ input:focus-visible {
   border: 1px solid var(--blue);
 }
 
+.modal-form button {
+width: 200px;
+height: 50px;
+background: var(--blue);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+text-align: center;
+letter-spacing: 0.06em;
+color: #fff;
+margin: auto;
+margin-top: 30px;
+border: none;
+}
+
+.modal-form button:hover {
+  cursor: pointer;
+}
+
+.modal-form label:focus-within svg {
+    fill: var(--blue);
+}
+
 /* Modal form icons */
 
 .icon-form {
@@ -832,19 +856,19 @@ input:focus-visible {
 .icon-form-avatar {
   width: 12px;
   height: 12px;
-  top: 134px;
+  top: 132px;
 }
 
 .icon-form-phone {
   height: 13px;
   width: 13px;
-  top: 203px;
+  top: 200px;
 }
 
 .icon-form-envelope {
   width: 15px;
   height: 12px;
-  top: 272px;
+  top: 268px;
 }
 
 /* Footer form */

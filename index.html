@@ -463,27 +463,27 @@
 
         <form class="modal-form" name="signup-form" action="http://localhost:3000/posts" method="POST">
           <h3>Zostaw swoje dane w formularzu poniżej</h3>
-          <label for="user_name">Imię</label>
+          <label for="user_name">Imię
           <svg class="icon-form-avatar icon-form">
             <use href="images/icons.svg#form-avatar"></use>
           </svg>
           <input type="text" name="name" id="user_name" required />
-
-          <label for="user_phone">Telefon</label>
+</label>
+          <label for="user_phone">Telefon
           <svg class="icon-form-phone icon-form">
             <use href="images/icons.svg#form-phone"></use>
           </svg>
-          <input type="tel" name="phone" id="user_phone" required />
-          <label for="user_email">E-mail</label>
+          <input type="tel" name="phone" id="user_phone" required /></label>
+          <label for="user_email">E-mail
           <svg class="icon-form-envelope icon-form">
             <use href="images/icons.svg#form-envelope"></use>
           </svg>
 
           <input type="email" name="email" id="user_email" required />
-
+</label>
           <label>
             Komentarz
-            <textarea placeholder="Wprowadź tekst"></textarea>
+            <textarea type="text" name="comment" placeholder="Wprowadź tekst"></textarea>
           </label>
 
           <div class="checkbox-container">
@@ -501,6 +501,7 @@
               <a href="#privacypolicy">Politykę Prywatności</a>.
             </label>
           </div>
+          <button type="submit">Wyślij</button>
         </form>
       </div>
     </div>

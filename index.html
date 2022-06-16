@@ -436,7 +436,7 @@
         <div class="container-footer-form">
           <h3>Zapisz się do newslettera</h3>
           <div class="footer-form">
-            <form>
+            <form name="newsletter" action="http://localhost:3000/posts" method="POST">
               <label>
                 <input type="email" name="email" placeholder="E-mail" />
               </label>
@@ -461,7 +461,7 @@
           </svg>
         </button>
 
-        <form class="modal-form">
+        <form class="modal-form" name="signup-form" action="http://localhost:3000/posts" method="POST">
           <h3>Zostaw swoje dane w formularzu poniżej</h3>
           <label for="user_name">Imię</label>
           <svg class="icon-form-avatar icon-form">

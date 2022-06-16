@@ -406,7 +406,9 @@
     <input type="email" name="email" placeholder="E-mail" />
   </label>
              
-                <button type="submit">Zapisz się</button>
+                <button type="submit"><span class="signup">Zapisz się</span> <svg>
+                    <use href="images/icons.svg#form-send"></use>
+                  </svg></button>
           
             </form>
               </div>
@@ -416,8 +418,9 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+
         <button type="button" class="close-btn" data-modal-close>
-<svg class="x"><use href="images/icons.svg#x"></use></svg>
+<svg class="x"><use href="/images/icons.svg#x"></use></svg>
         </button>
 
         <form class="modal-form">
@@ -426,19 +429,20 @@
           <svg class="icon-form-avatar icon-form">
           <use href="images/icons.svg#form-avatar"></use>
         </svg>
-  <input type="text" name="name" id="user_name" />
-         <svg class="icon-form-phone icon-form">
-          <use href="images/icons.svg#form-phone"></use>
-        </svg>
+  <input type="text" name="name" id="user_name" required />
+      
+       
           <label for="user_phone">Telefon</label>
-
-  <input type="tel" name="phone" id="user_phone" />
+   <svg class="icon-form-phone icon-form">
+          <use href="images/icons.svg#form-phone"></use> </svg>
+  <input type="tel" name="phone" id="user_phone" required/>
+          <label for="user_email">E-mail</label>        
           <svg class="icon-form-envelope icon-form">
           <use href="images/icons.svg#form-envelope"></use>
         </svg>
-         <label for="user_email">E-mail</label>
+ 
 
-  <input type="email" name="email" id="user_email" />
+  <input type="email" name="email" id="user_email" required />
         
           <label>
               Komentarz
@@ -446,14 +450,15 @@
             </label>
 
             <div class="checkbox-container">
+        
               <input
-                            class="checkbox"
+              class="web-checkbox"
                             type="checkbox"
                             name="consent"
                             value="consent"
                             required />
 
-                        <label for="consent" class="checkbox">
+                        <label for="consent" class="checkbox-label">
                             Oświadczam, iż akceptuję
                             <a href="#rules">Regulamin</a> i
                             <a href="#privacypolicy">Politykę Prywatności</a>.

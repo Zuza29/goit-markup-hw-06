@@ -706,7 +706,9 @@ padding-top: 49px;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.modal-form > p {
+/* Modal form */
+
+.modal-form > h3 {
 font-weight: 700;
 font-size: 20px;
 line-height: 1.15;
@@ -717,8 +719,13 @@ margin-top: 40px;
 margin-bottom: 30px;
 }
 
-.modal-form label p,
-.checkbox-container label {
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.modal-form label {
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
@@ -728,10 +735,6 @@ margin-bottom: 4px;
 margin-top: 10px;
 }
 
-.modal-form label {
-  display: flex;
-  flex-direction: column;
-}
 
 .modal-form textarea::placeholder {
 color: rgba(117, 117, 117, 0.5);
@@ -745,6 +748,7 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 width: 448px;
 height: 40px;
+
 }
 
 .modal-form textarea {
@@ -752,16 +756,24 @@ height: 40px;
   width: 448px;
 }
 
-.checkbox-container {
-  display: flex;
-  justify-content: center;
-}
-
 .modal-form input,
 .modal-form textarea {
-margin-left: auto;
 margin-right: auto;
+margin-left: auto;
 }
+
+.checkbox-container {
+  display: flex;
+
+  justify-content: center;
+    padding-right: 40px;
+    margin-top: 20px;
+}
+
+.checkbox-container a {
+  color: var(--blue);
+}
+
 
 input.checkbox {
  width: 16px;
@@ -788,4 +800,32 @@ input.checkbox {
 .modal-form textarea:focus-within {
 border: 1px solid var(--blue);
 border-radius: 4px;
+}
+
+/* Modal form icons */
+
+.icon-form {
+  width: 12px;
+  height: 12px;
+  fill: #000;
+  position: absolute;
+    left: 52px;
+}
+
+.icon-form-avatar {
+  width: 12px;
+  height: 12px;
+  top: 134px;
+}
+
+.icon-form-phone {
+  height: 13px;
+  width: 13px;
+  top: 203px;
+}
+
+.icon-form-envelope {
+  width: 15px;
+  height: 12px;
+  top: 272px;
 }

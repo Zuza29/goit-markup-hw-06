@@ -421,22 +421,30 @@
         </button>
 
         <form class="modal-form">
-          <p>Zostaw swoje dane w formularzu poniżej</p>
+          <h3>Zostaw swoje dane w formularzu poniżej</h3>
+          <label for="user_name">Imię</label>
+          <svg class="icon-form-avatar icon-form">
+          <use href="images/icons.svg#form-avatar"></use>
+        </svg>
+  <input type="text" name="name" id="user_name" />
+         <svg class="icon-form-phone icon-form">
+          <use href="images/icons.svg#form-phone"></use>
+        </svg>
+          <label for="user_phone">Telefon</label>
+
+  <input type="tel" name="phone" id="user_phone" />
+          <svg class="icon-form-envelope icon-form">
+          <use href="images/icons.svg#form-envelope"></use>
+        </svg>
+         <label for="user_email">E-mail</label>
+
+  <input type="email" name="email" id="user_email" />
+        
           <label>
-           <p> Imię </p>
-            <input type="e-mail">
-          </label>
-          <label>
-               <p> Telefon </p>
-            <input type="">
-          </label>
-          <label>
-               <p> E-mail </p>
-            <input type="">
-          </label>
-          <label>
-                <p> Komentarz </p>
+              Komentarz
             <textarea placeholder="Wprowadź tekst" resize="none"></textarea>
+            </label>
+
             <div class="checkbox-container">
               <input
                             class="checkbox"
@@ -445,8 +453,8 @@
                             value="consent"
                             required />
 
-                        <label for="consent">
-                            Oświadczam iż akceptuję
+                        <label for="consent" class="checkbox">
+                            Oświadczam, iż akceptuję
                             <a href="#rules">Regulamin</a> i
                             <a href="#privacypolicy">Politykę Prywatności</a>.
                         </label>
